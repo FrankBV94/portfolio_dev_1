@@ -5,6 +5,7 @@ import PlusIcon from "../../components/icons/PlusIcon.astro";
 import { Image } from "astro:assets";
 import myImage from "../../assets/profile.jpg";
 ---
+
 <Section class="rounded-2xl w-full bg-white dark:bg-gray-800" id="about-me">
   <div
     class="flex flex-col justify-between items-center max-w-screen-2xl p-4 mx-auto lg:flex-row lg:gap-8 xl:gap-0 lg:p-12"
@@ -23,7 +24,7 @@ import myImage from "../../assets/profile.jpg";
       <p
         class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
       >
-        I create amazing websites and applications tailored to what you need.
+        I create amazing websites and applications customized to your needs.
       </p>
       <a
         href="#"
@@ -37,7 +38,9 @@ import myImage from "../../assets/profile.jpg";
         class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
       >
         Email me
-        <MailIcon class="w-5 h-5 ml-2 -mr-1 stroke-gray-900" />
+        <MailIcon
+          class="w-5 h-5 ml-2 -mr-1 stroke-gray-900 dark:stroke-white"
+        />
       </a>
     </div>
     <div

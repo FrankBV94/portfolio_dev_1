@@ -1,5 +1,7 @@
 # Web Portfolio #1
 
+Simple and minimalist portfolio theme made with Astro.
+
 ```sh
 git clone https://github.com/FrankBV94/portfolio_dev_1.git
 cd portfolio_dev_1
@@ -26,8 +28,10 @@ Inside this project, you'll see the following folders and files:
 │   │   │   └── CodeIcon.astro
 │   │   │   └── ExperienceIcon.astro
 │   │   │   └── MailIcon.astro
+│   │   │   └── MoonIcon.astro
 │   │   │   └── PlusIcon.astro
 │   │   │   └── ProjectIcon.astro
+│   │   │   └── SunIcon.astro
 │   │   └── ExperienceItem.astro
 │   │   └── Footer.astro
 │   │   └── Header.astro
