@@ -1,0 +1,20 @@
+---
+import Experience from "../pages/sections/Experience.astro";
+import Layout from "../layouts/Layout.astro";
+import Projects from "./sections/Projects.astro";
+import Main from "./sections/Main.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Portafolio Dev."
+  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iure obcaecati ad eveniet magni harum. Quod nobis repellendus similique quia."
+>
+  <main class="flex flex-col gap-4 p-4 w-full max-w-screen-2xl">
+    <Main />
+    <div class="flex gap-4 w-full">
+      <Experience />
+      <Projects />
+    </div>
+  </main>
+</Layout>

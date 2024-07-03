@@ -1,0 +1,67 @@
+---
+import Section from "../../components/Section.astro";
+import MailIcon from "../../components/icons/MailIcon.astro";
+import PlusIcon from "../../components/icons/PlusIcon.astro";
+import { Image } from "astro:assets";
+import myImage from "../../assets/profile.jpg";
+---
+<Section class="rounded-2xl w-full bg-white dark:bg-gray-800" id="about-me">
+  <div
+    class="flex flex-col justify-between items-center max-w-screen-2xl p-4 mx-auto lg:flex-row lg:gap-8 xl:gap-0 lg:p-12"
+  >
+    <div class="">
+      <h4
+        class="max-w-2xl mb-8 text-gray-500 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-gray-400"
+      >
+        Fullstack Developer
+      </h4>
+      <h1
+        class="max-w-2xl mb-4 text-gray-900 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+      >
+        Hi, I'm John Doe
+      </h1>
+      <p
+        class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+      >
+        I create amazing websites and applications tailored to what you need.
+      </p>
+      <a
+        href="#"
+        class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
+      >
+        Hire me
+        <PlusIcon class="w-5 h-5 ml-2 -mr-1" />
+      </a>
+      <a
+        href="#"
+        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+      >
+        Email me
+        <MailIcon class="w-5 h-5 ml-2 -mr-1 stroke-gray-900" />
+      </a>
+    </div>
+    <div
+      class="hidden items-center justify-center gap-8 lg:mt-0 lg:flex lg:flex-col"
+    >
+      <span class="relative inline-flex">
+        <span
+          class="bg-orange-100 text-orange-800 text-sm font-medium me-2 px-4 py-2 rounded-2xl dark:bg-orange-900 dark:text-orange-300"
+        >
+          Avaible For Work
+        </span>
+        <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 mr-1">
+          <span
+            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"
+          ></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"
+          ></span>
+        </span>
+      </span>
+      <Image
+        src={myImage}
+        class="size-96 rounded-full"
+        alt="A very cool penguin!"
+      />
+    </div>
+  </div>
+</Section>

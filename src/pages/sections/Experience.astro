@@ -1,0 +1,55 @@
+---
+import Section from "../../components/Section.astro";
+import ExperienceItem from "../../components/ExperienceItem.astro";
+import ExperienceIcon from "../../components/icons/ExperienceIcon.astro";
+
+const EXPERIENCE = [
+  {
+    title: "Frontend Developer",
+    company: "Codecademy",
+    location: "Remote",
+    date: "2020 - Present",
+    description:
+      "I was a part of the development team of the React.js and React Native apps for Codecademy.",
+  },
+  {
+    title: "Software Engineer",
+    company: "Google",
+    location: "Remote",
+    date: "2019 - 2020",
+    description:
+      "I was a part of the development team of the Android and iOS apps for Google.",
+  },
+  {
+    title: "Software Engineer",
+    company: "Amazon",
+    location: "Remote",
+    date: "2018 - 2019",
+    description:
+      "I was a part of the development team of the Android and iOS apps for Google.",
+  },
+];
+---
+
+<Section class="rounded-2xl w-1/2 bg-white dark:bg-gray-800" id="experience">
+  <div class="max-w-screen-xl p-4 mx-auto lg:p-12">
+    <div class="max-w-3xl mx-auto text-left">
+      <h2
+        class="inline-flex items-center gap-4 text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white"
+      >
+        <ExperienceIcon class="w-8 h-8 stroke-gray-900" />
+        Experience
+      </h2>
+    </div>
+
+    <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
+      <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
+        <ol
+          class="relative border-s border-neutral-200 dark:border-neutral-700"
+        >
+          {EXPERIENCE.map((experience) => <ExperienceItem {...experience} />)}
+        </ol>
+      </div>
+    </div>
+  </div>
+</Section>
